@@ -1,0 +1,11 @@
+<li class="{{ getClass() }}" >
+	<h4>
+		{{ titlePost }} <span class="float-right"> {{ datePost | date:'medium' }} </span>
+	</h4>
+	<p>
+		{{ contentPost }}
+	</p>
+	<button class ="btn btn-success"(click)="onLove()">Love It</button>
+	<button class ="btn btn-danger"(click)="onNoLove()">Don't love it</button>
+	<span class="float-right">Nombre de Love : {{ lovePost }}</span>
+</li>
